@@ -1,6 +1,7 @@
 // 
 // 
 // 
+// 
 let balls = [],
   gravity = 0.4,
   ball, points, highscore,
@@ -30,13 +31,11 @@ function setup() {
 function mousePressed() {
   balls.push(new Ball(random(-5, 5), random(-5, 0)))
 }
-
 function draw() {
   imageMode(CORNER)
   background(Fimg);
-
   boardX = mouseX
-
+  
   imageMode(CENTER)
   image(GSimg, boardX, boardY, boardW + 10, boardH + 50)
 let bl = balls.length
