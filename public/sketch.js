@@ -15,7 +15,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 700)
+  // createCanvas(500, 700)
+  createCanvas(windowWidth, windowHeight)
   boardX = width / 2
   boardW = width / 7;
   boardH = boardW / 5
